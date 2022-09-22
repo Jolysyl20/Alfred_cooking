@@ -1,0 +1,44 @@
+[{"categorie":"céréale", "infos" : [
+    {"name":"pâte","quantité":400, "volume":"g", "dateFin" : null },
+    {"name":"farine","quantité":40, "volume":"gramme", "dateFin":null}
+
+
+
+
+
+
+    ]
+ 
+},
+
+
+{"categorie":"fruits légumes","infos" : [
+    {"name":"emmental râpé","quantité":250,"volume":"gramme","dateFin":"2022-10-22"},
+    {"name":"courgette","quantité":2,"volume":"unité","dateFin":null}
+]},
+{"categorie":"viandes poissons","infos" : [
+    {"name":"emmental râpé","quantité":250,"volume":"gramme","dateFin":"2022-10-22"}
+]},
+{"categorie":"produit laitier","infos" : [
+    {"name":"emmental râpé","quantité":250,"volume":"gramme","dateFin":"2022-10-22"}
+]},
+{"categorie":"épicerie salée","infos" : [
+    {"name":"sel","quantité":1000,"volume":"gramme","dateFin":null},
+    {"name":"cornichon","quantité":1,"volume":"pot","dateFin":null},
+    {"name":"piment d'espelette","quantité":250,"volume":"pot","dateFin":null}
+]},
+{"categorie":"épicerie sucrée","infos" : [
+    {"name":"sucre","quantité":1000,"volume":"gramme","dateFin":null}
+]},
+{"categorie":"conserve","infos" : [
+    {"name":"fruits sirop","quantité":1,"volume":"boite","dateFin":null}
+]},
+{"categorie":"surgelé","infos" : [
+    {"name":"cordon bleu","quantité":10,"volume":"unité","dateFin":null},
+    {"name":"poissons panés","quantité":10,"volume":"unité","dateFin":null}
+]}
+
+
+
+
+]

@@ -1,0 +1,9 @@
+{
+    "user" : "root",
+    "pass" : "toor",
+    "url" : "@0.0.0.0:27017/",
+    "base" : "ALFREDCOOKING",
+    "recettes" : "recettes",
+    "aliments" : "aliments",
+    "admin" : "user"
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/icons.css') }}">
+    <script src="{{ url_for('static', filename='js/bootstrap.js') }}"></script>
+    <title>Alfred Cook</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row"><h1 style="text-align: center;">Alfred Cook</h1></div>
+        <div class="row">
+            <!--
+#########################################################################                
+#                                Ajout                                  #
+#########################################################################
+            -->
+        <div class="col-md-3">
+<p style="text-align: center;"> Ajouter </p>
+<form action="http://localhost:3000/ajout" method="POST">
+    <select class="form-select" name="categorie" >
+        <option selected>Catégorie...</option>
+        {% for ingredient in aliments %}
+        
+            <option value="{{ingredient['catégorie']}}">{{ingredient['catégorie']}}</option>
+        
+        {%endfor %}
+    </select>
+    <input class="form-control" type="text" name="nom" placeholder="nom"/>
+    <input class="form-control" type="text" name="quantite" placeholder="quantité"/>
+    <select class="form-select" name="volume" >
+        <option selected>Volume...</option>
+        {% for v in vol %}
+        
+            <option value="{{v}}">{{v}}</option>
+        
+        {%endfor %}
+    </select>
+    
+    <input class="form-control" name="dateFin" type="date" placeholder="date péremption"/>
+    <button type="submit" class="btn btn-info">ajouter</button>
+</form>
+        </div>
+            <!--
+#########################################################################                
+#                                Affiche                                #
+#########################################################################
+            -->
+        <div class="col-md-8">
+ 
+ {% for ingredient in aliments %}
+ <div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="{{ingredient['id']}}">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ingredient['id']}}" aria-expanded="true" aria-controls="collapseOne">
+            {{ingredient['catégorie']}}
+        </button>
+      </h2>
+      <div id="collapse{{ingredient['id']}}" class="accordion-collapse collapse" aria-labelledby="{{ingredient['id']}}" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+            
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                      <th scope="col">Article</th>
+                      <th scope="col">Quantité</th>
+                      <th scope="col">Volume</th>
+                      <th scope="col">Péremption</th>
+                      <th scope="col">modifier</th>
+                      <th scope="col">supprimer</th>
+
+                    </tr>
+                  </thead>
+
+            <!--
+#########################################################################                
+#                       debut modif                                     #
+#########################################################################
+            -->
+
+            {% for infos in ingredient['infos'] %}
+        
+
+            <tbody>
+                <form action="modif" method="post">
+                <!--
+                    NOM
+                -->
+                <td><input class="form-control" type="text" name="nnom" placeholder="{{infos.name}}"/></td>
+                <!--
+                    QUANTITE
+                -->
+                <td><input type="number"  name="nqte" class="form-control" value={{infos.quantite}}></td>
+                <!--
+                    VOLUME
+                -->
+                <td>    <select class="form-select" name="nvolume" >
+                    <option selected>{{infos.volume}}</option>
+                    {% for v in vol %}
+                    
+                        <option value="{{v}}">{{v}}</option>
+                    
+                    {%endfor %}
+                </select></td>
+                <!-- 
+                    DATE FIN
+                -->
+                <td>{% if infos.dateFin == "" or infos.dateFin == 'None' %}
+                    <p>non périssable</p>
+                    {%else%}
+                    {{infos.dateFin}}
+                    {% endif%}
+                </td>
+                <!--
+                    SUBMIT
+                 
+                -->
+                <td>
+                    <input type=hidden value="{{ingredient['catégorie']}}"name=Origine_categorie />
+                    <input type=hidden value="{{infos.volume}}"name=Origine_volume />
+                    <input type=hidden value="{{infos.name}}"name=Origine_name />
+                    <input type=hidden value="{{infos.quantite}}"name=Origine_quantite />
+                    <input type=hidden value="{{ infos.dateFin }}"name=dateFin />
+                    <button type="submit"> 
+                    <lord-icon
+                        src="https://cdn.lordicon.com/aslgozpd.json"
+                        trigger="hover"
+                        colors="primary:#121331"
+                        style="width:20px;height:20px">
+                    </lord-icon>
+                    </button>
+                </td>
+                </form>
+            <!--
+#########################################################################                
+#                           Fin Modif                                   #
+#########################################################################
+            -->
+
+                <td >
+            <!--
+#########################################################################                
+#                            debut del                                  #
+#########################################################################
+            -->                
+                    <form action="delete" method=post >
+                        <input type=hidden value="{{ingredient['catégorie']}}"name=categorie />
+                        <input type=hidden value="{{ infos.name }}"name=name_aliment_to_delete />
+                        
+                     
+                        <button type=submit >  
+                            <lord-icon
+                            src="https://cdn.lordicon.com/qsloqzpf.json"
+                            trigger="hover"
+                            colors="primary:#121331"
+                            style="width:20px;height:20px">
+                            </lord-icon> 
+                        </button>
+                    </form>
+            <!--
+#########################################################################                
+#                           Fin del                                     #
+#########################################################################
+            -->
+
+                </td>
+            </tbody>    
+            {% endfor %}
+        </table>
+   
+        </div>
+      </div>
+    </div>
+{%endfor %}
+
+        </div>
+
+    </div>
+   
+</div>
+
+<script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+
+
+  
+</body>
+</html>

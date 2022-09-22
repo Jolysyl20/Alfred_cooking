@@ -1,0 +1,87 @@
+[
+{"name":"Pommes de terre farcies au bacon et à l'emmental",
+"niveau":"facile",
+"economie":1,
+"time":75,
+"preparation":15,
+"cuisson":60, 
+"calorie":110,
+"allergene":["lait vache","gluten"],
+"personne":4,
+"editeur":"Syl20",
+"ingrédients":
+[
+{"name":"pomme de terre","quantité":600, "volume":"gramme","categorie":"fruits légumes"},
+{"name":"crème fraiche","quantité":80, "volume":"gramme","categorie":"produit laitier"},
+{"name":"bacon fumé","quantité":50, "volume":"gramme","categorie":"viandes poissons"},
+{"name":"emmental entier","quantité":50,"volume":"gramme","categorie":"produit laitier"},
+{"name":"emmental râpé","quantité":50,"volume":"gramme","categorie":"produit laitier"}
+],"recette":
+["Préchauffer le four à 180°C. Couper 4 morceaux de papier aluminium et y emballer les pommes de terre. Enfourner pour 40 minutes", 
+"Pendant ce temps, découper l'emmental et le bacon en petits dés. Les mettre dans un saladier et réserver.",
+"Une fois cuites, découper les pommes de terre en deux. Enlever une partie de la chair et la déposer dans le saladier avec le bacon et l'emmental. Ajouter la crème fraîche, saler, poivrer et bien mélanger.",
+"Remplir les pommes de terre avec la préparation, parsemer d'emmental râpé et enfourner pendant 15 minutes. Servir chaud."
+]},
+{"name":"Veau marengo",
+"niveau":"facile",
+"economie":1,
+"time":135,
+"preparation":25,
+"cuisson":110,
+"calorie":110,
+"allergene":["gluten"],
+"personne":4,
+"editeur":"Syl20",
+"ingrédients":
+[
+{"name":"d'épaule de veau","quantité":1500, "volume":"gramme","categorie":"viandes poissons"},
+{"name":"fond de veau","quantité":1000, "volume":"ml","categorie":"épicerie salée"},
+{"name":"tomates concassées","quantité":800, "volume":"gramme","categorie":"fruits légumes"},
+{"name":"oignon","quantité":400,"volume":"gramme","categorie":"épicerie salée"},
+{"name":"champignons de Paris","quantité":300,"volume":"gramme","categorie":"fruits légumes"},
+{"name":"huile d'olive","quantité":40, "volume":"gramme","categorie":"épicerie salée"},
+{"name":"farine","quantité":40, "volume":"gramme","categorie":"épicerie salée"},
+{"name":"vin blanc","quantité":200, "volume":"ml","categorie":"viandes poissons"},
+{"name":"persil","quantité":10,"volume":"gramme","categorie":"épicerie salée"},
+{"name":"concentré de tomate","quantité":10,"volume":"gramme","categorie":"épicerie salée"},
+{"name":"ail","quantité":10,"volume":"gramme","categorie":"épicerie salée"},
+{"name":"bouquet garni","quantité":3,"volume":"gramme","categorie":"épicerie salée"}
+],"recette":
+["Dénerver la viande, la découper en morceaux, saler et poivrer. Eplucher et émincer les oignons et les gousses d'ail.", 
+"Dans une grande cocotte, faire chauffer l'huile à feu vif pour faire colorer les morceaux de veau pendant 10 minutes. Les saupoudrer de farine, mélanger et laisser cuire 3 minutes. Ajouter l'ail et l'oignon, laisser cuire à nouveau 5 minutes en remuant régulièrement.",
+"Ajouter le bouquet garni, le vin blanc, le concentré de tomate, les tomates concassées et le litre de fond de veau. Couvrir et laisser mijoter pendant 1 heure.",
+"Dégraisser la sauce en surface à la cuillère, ajouter les champignons lavés et coupés en deux. Laisser mijoter 30 minutes supplémentaires, dégraisser à nouveau la sauce si nécessaire. Saler, poivrer et ajouter le persil haché. Servir bien chaud."
+]},
+{"name":"Salade de pâtes à la grecque",
+"niveau":"facile",
+"economie":1,
+"time":25,
+"preparation":15,
+"cuisson":10, 
+"calorie":110,
+"allergene":["lait brebis","gluten","poivre"],
+"personne":4,
+"editeur":"Syl20",
+"ingrédients":
+[
+{"name":"pâte","quantité":400, "volume":"g","categorie":"épicerie salée"},
+{"name":"tomates cerise","quantité":250, "volume":"g","categorie":"fruits légumes"},
+{"name":"feta","quantité":200, "volume":"g","categorie":"produit laitier"},
+{"name":"concombre","quantité":200,"volume":"g","categorie":"legumes"},
+{"name":"olive noires","quantité":100,"volume":"g","categorie":"fuits"},
+{"name":"oignon rouge","quantité":1, "volume":"oignon","categorie":"épicerie salée"},
+{"name":"sel","quantité":1, "volume":"g","categorie":"épicerie salée"},
+{"name":"poivre","quantité":1, "volume":"g","categorie":"épicerie salée"}
+],"recette":
+["Faire cuire les pâtes dans une grande casserole d'eau salée et bouillante selon les instructions sur l'emballage. Une fois les pâtes cuites, égoutter et laisser refroidir celles-ci. ", 
+"Peler et émincer finement l'oignon rouge. Découper la feta en petits cubes. Découper les tomates cerise en deux. Rincer et peler le concombre. Découper ensuite celui-ci dans le sens de la longueur. Trancher enfin le concombre.",
+"Ajouter le bouquet garni, le vin blanc, le concentré de tomate, les tomates concassées et le litre de fond de veau. Couvrir et laisser mijoter pendant 1 heure.",
+"Mélanger tous les ingrédients dans un saladier. Ajouter les olives noires, le poivre et l'huile d'olive. Remuer le tout. Déguster frais accompagné de la vinaigrette de votre choix. "
+]}
+
+
+
+
+
+
+]
